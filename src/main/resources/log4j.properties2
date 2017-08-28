@@ -1,0 +1,15 @@
+# Root logger option
+log4j.rootLogger=TRACE, stdout
+
+# Control logging at the class level so we get DEBUG messages
+log4j.logger.com.jbl.example=INFO,stdout
+log4j.additivity.com.jbl.example=false
+
+log4j.logger.org.hibernate=TRACE,stdout
+log4j.additivity.org.hibernate=false
+
+# Direct log messages to stdout
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target=System.out
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=YYY%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n
