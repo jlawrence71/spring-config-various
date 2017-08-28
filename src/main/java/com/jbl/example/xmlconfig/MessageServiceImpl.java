@@ -8,7 +8,6 @@ public class MessageServiceImpl implements MessageService{
 		this.message = message;
 	}
 	
-	@Override
 	public String getMessage() {
 		return this.message;
 	}
